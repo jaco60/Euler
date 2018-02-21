@@ -1,15 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 // Quel est le plus grand palindrome créé à partir du produit de deux nombres à 3 chiffres ?
 
 func isPalin(nbre int) bool {
-	digits := []int{}
-	for nbre > 0 {
-		digits = append(digits, nbre%10)
-		nbre /= 10
-	}
+	digits := strconv.Itoa(nbre)
 	i, j := 0, len(digits)-1
 	for i < j && digits[i] == digits[j] {
 		i++
