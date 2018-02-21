@@ -11,10 +11,10 @@ func abs(n int) int {
 }
 
 func main() {
-	somme_carres, somme := 0, 0
+	sommeCarres, somme := 0, 0
 	for n := 1; n <= 100; n++ {
-		somme_carres += n * n
+		sommeCarres += n * n
 		somme += n
 	}
-	println(abs(somme_carres - somme*somme))
+	println(abs(sommeCarres - somme*somme))
 }
