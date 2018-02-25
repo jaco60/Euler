@@ -2,6 +2,7 @@ package commons
 
 import "math"
 
+// Sub optimal...
 func IsPrime(nb int) bool {
 	if nb == 2 {
 		return true
