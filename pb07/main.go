@@ -1,6 +1,7 @@
 package main
 
 import (
+	"ProjetEuler/commons"
 	"fmt"
 )
 
@@ -10,7 +11,7 @@ func main() {
 	cpt, nb := 1, 1
 	for cpt < 10001 {
 		nb += 2
-		if isPrime(nb) {
+		if commons.IsPrime(nb) {
 			cpt++
 		}
 	}

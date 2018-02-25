@@ -1,6 +1,7 @@
 package main
 
 import (
+	"ProjetEuler/commons"
 	"fmt"
 )
 
@@ -10,7 +11,7 @@ func main() {
 	const LIMITE = 2000000
 	somme := 2
 	for nb := 3; nb <= LIMITE; nb += 2 {
-		if isPrime(nb) {
+		if commons.IsPrime(nb) {
 			somme += nb
 		}
 	}

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"ProjetEuler/commons"
 	"fmt"
 	"math"
 	"sort"
@@ -27,7 +28,7 @@ func factors(nbre int) []int {
 func main() {
 	facts := factors(600851475143)
 	i := len(facts) - 1
-	for i >= 0 && !IsPrime(facts[i]) {
+	for i >= 0 && !commons.IsPrime(facts[i]) {
 		i--
 	}
 	fmt.Printf("Plus grand facteur premier de %d : %d\n", 600851475143, facts[i])
