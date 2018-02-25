@@ -2,26 +2,9 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 //Quel est la somme de tous les nombres premiers en dessous de deux millions ?
-
-func isPrime(nb int) bool {
-	if nb == 2 {
-		return true
-	}
-	if nb%2 == 0 {
-		return false
-	}
-	root := int(math.Sqrt(float64(nb)))
-	for div := 3; div <= root; div = div + 2 {
-		if nb%div == 0 {
-			return false
-		}
-	}
-	return true
-}
 
 func main() {
 	const LIMITE = 2000000

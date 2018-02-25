@@ -24,27 +24,10 @@ func factors(nbre int) []int {
 	}
 }
 
-// sub-optimal...
-func isPrime(nb int) bool {
-	if nb == 2 {
-		return true
-	}
-	if nb%2 == 0 {
-		return false
-	}
-	root := int(math.Sqrt(float64(nb)))
-	for div := 3; div <= root; div = div + 2 {
-		if nb%div == 0 {
-			return false
-		}
-	}
-	return true
-}
-
 func main() {
 	facts := factors(600851475143)
 	i := len(facts) - 1
-	for i >= 0 && !isPrime(facts[i]) {
+	for i >= 0 && !IsPrime(facts[i]) {
 		i--
 	}
 	fmt.Printf("Plus grand facteur premier de %d : %d\n", 600851475143, facts[i])
