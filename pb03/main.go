@@ -1,8 +1,8 @@
 package main
 
 import (
-	"ProjetEuler/commons"
 	"fmt"
+	"github.com/jaco60/Euler/commons"
 	"math"
 	"sort"
 )
