@@ -1,8 +1,8 @@
 package main
 
 import (
-	"ProjetEuler/commons"
 	"fmt"
+	"github.com/jaco60/Euler/commons"
 )
 
 //Quel est la somme de tous les nombres premiers en dessous de deux millions ?
